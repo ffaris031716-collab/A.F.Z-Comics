@@ -43,10 +43,10 @@ render(comics);
 // ====== CHARACTERS DATA ======
 const characters = [
   {
-    name: "Hero Name",
-    role: "The Protector",
-    description: "A brave hero with incredible powers who stands against the forces of darkness.",
-    image: "assets/hero1.jpg"  // Add your image filename here
+    name: "Sherdil",
+    role: "Leader of Legion",
+    description: " The first member was Sherdil from Pakistan. Blessed with superhuman strength and armed with an indestructible metal sword and shield, he was the leader of this team. Years ago, he lost his family to a demon attack. He swore never to let it happen again"
+    image: "assets/sherdil.jpg"  // Add your image filename here
   },
   {
     name: "Villain Name",
