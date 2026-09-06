@@ -97,4 +97,5 @@ function renderCharacters(list) {
 // Render characters when page loads
 document.addEventListener("DOMContentLoaded", function() {
   renderCharacters(characters);
+   console.log("Characters rendered!");
 });
