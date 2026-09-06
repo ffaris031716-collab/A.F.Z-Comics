@@ -54,9 +54,9 @@ render(comics);
 // ====== CHARACTERS DATA ======
 const characters = [
   {
-    name: "Zayd Al-Haqq",
-    role: "The Commander",
-    description: "A fearless leader with the power to command the elements.",
+    name: "Sherdil",
+    role: "Leader of Legion",
+    description: " Sherdil from Pakistan. Blessed with superhuman strength and armed with an indestructible metal sword and shield, he was the leader of this team. Years ago, he lost his family to a demon attack. He swore never to let it happen again..",
     image: "assets/hero1.jpg"
   },
   {
