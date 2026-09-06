@@ -47,14 +47,14 @@ const characters = [
   {
     name: "Sherdil",
     role: "Leader of Legion",
-    description: "A courageous warrior blessed with superhuman strength and unshakeable faith. He leads the Legion with wisdom and valor.",
-    image: "assets/hamza.jpg"
+    description: " Sherdil from Pakistan. Blessed with superhuman strength and armed with an indestructible metal sword and shield, he was the leader of this team. Years ago, he lost his family to a demon attack. He swore never to let it happen again.",
+    image: "assets/hero1.jpg"
   },
   {
-    name: "Layla Noor",
-    role: "The Veil of Light",
-    description: "A master of illusion and light manipulation. She protects the innocent by shrouding them in invisibility and blinding their enemies.",
-    image: "assets/layla.jpg"
+    name: "Ghazi",
+    role: "Member of Legion",
+    description: "He was incredibly strong, could teleport, and fire lasers from his eyes. He could also absorb energy from the sun. But his power had a price—the more he absorbed, the more it burned him from within. He was willing to pay that price.",
+    image: "assets/hero2.jpg"
   },
   {
     name: "Ibrahim Al-Khalil",
