@@ -10,9 +10,12 @@ const comics = [
 
 // ====== RENDER COMICS ======
 const grid = document.getElementById("comicGrid");
-const search = document.getElementById("search");
 
 function render(list) {
+  if (!grid) {
+    console.error("comicGrid not found!");
+    return;
+  }
   grid.innerHTML = "";
   if (!list.length) {
     grid.innerHTML = '<p style="color:#888">No comics found.</p>';
@@ -37,10 +40,14 @@ function render(list) {
   });
 }
 
-search.addEventListener("input", () => {
-  const q = search.value.toLowerCase();
-  render(comics.filter(c => (c.title + " " + c.description).toLowerCase().includes(q)));
-});
+// ====== SEARCH (DISABLED - NO SEARCH BAR IN HTML) ======
+// const search = document.getElementById("search");
+// if (search) {
+//   search.addEventListener("input", () => {
+//     const q = search.value.toLowerCase();
+//     render(comics.filter(c => (c.title + " " + c.description).toLowerCase().includes(q)));
+//   });
+// }
 
 render(comics);
 
@@ -50,7 +57,7 @@ const characters = [
     name: "Zayd Al-Haqq",
     role: "The Commander",
     description: "A fearless leader with the power to command the elements.",
-    image: "assets/zayd.jpg"
+    image: "assets/hero1.jpg"
   },
   {
     name: "Amina Noor",
@@ -101,4 +108,4 @@ function renderCharacters(list) {
 // ====== RUN WHEN PAGE LOADS ======
 document.addEventListener("DOMContentLoaded", function() {
   renderCharacters(characters);
-});
+});;
