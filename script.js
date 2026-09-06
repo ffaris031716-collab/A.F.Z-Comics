@@ -45,8 +45,8 @@ render(comics);
 // ====== CHARACTERS DATA ======
 const characters = [
   {
-    name: "Hamza Al-Rashid",
-    role: "The Lion of Faith",
+    name: "Sherdil",
+    role: "Leader of Legion",
     description: "A courageous warrior blessed with superhuman strength and unshakeable faith. He leads the Legion with wisdom and valor.",
     image: "assets/hamza.jpg"
   },
