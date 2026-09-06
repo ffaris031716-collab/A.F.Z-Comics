@@ -1,3 +1,4 @@
+alert("script.js is loading!");
 const comics = [
   {
     title: "The Legion of Muslims",
