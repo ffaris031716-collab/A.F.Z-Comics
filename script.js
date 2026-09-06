@@ -54,22 +54,22 @@ render(comics);
 // ====== CHARACTERS DATA ======
 const characters = [
   {
-    name: "Zayd Al-Haqq",
-    role: "The Commander",
-    description: "A fearless leader with the power to command the elements.",
+    name: "Hamza Al-Rashid",
+    role: "The Lion of Faith",
+    description: "A courageous warrior blessed with superhuman strength and unshakeable faith. He leads the Legion with wisdom and valor.",
     image: "assets/hero1.jpg"
   },
   {
-    name: "Amina Noor",
-    role: "The Light Weaver",
-    description: "A mystic warrior who wields the power of light.",
-    image: "assets/hero2.jpg"
+    name: "Layla Noor",
+    role: "The Veil of Light",
+    description: "A master of illusion and light manipulation. She protects the innocent by shrouding them in invisibility and blinding their enemies.",
+    image: "assets/layla.jpg"
   },
   {
-    name: "Malik Al-Shadow",
-    role: "The Dark Prophet",
-    description: "A fallen hero who now seeks to destroy the Legion.",
-    image: "assets/malik.jpg"
+    name: "Ibrahim Al-Khalil",
+    role: "The Flame of Justice",
+    description: "A righteous judge who wields the power of divine fire. He burns away corruption and stands as a beacon of justice.",
+    image: "assets/ibrahim.jpg"
   }
 ];
 
