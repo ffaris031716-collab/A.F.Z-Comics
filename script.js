@@ -40,15 +40,6 @@ function render(list) {
   });
 }
 
-// ====== SEARCH (DISABLED - NO SEARCH BAR IN HTML) ======
-// const search = document.getElementById("search");
-// if (search) {
-//   search.addEventListener("input", () => {
-//     const q = search.value.toLowerCase();
-//     render(comics.filter(c => (c.title + " " + c.description).toLowerCase().includes(q)));
-//   });
-// }
-
 render(comics);
 
 // ====== CHARACTERS DATA ======
@@ -57,7 +48,7 @@ const characters = [
     name: "Hamza Al-Rashid",
     role: "The Lion of Faith",
     description: "A courageous warrior blessed with superhuman strength and unshakeable faith. He leads the Legion with wisdom and valor.",
-    image: "assets/hero1.jpg"
+    image: "assets/hamza.jpg"
   },
   {
     name: "Layla Noor",
@@ -105,7 +96,6 @@ function renderCharacters(list) {
   });
 }
 
-// ====== RUN WHEN PAGE LOADS ======
 document.addEventListener("DOMContentLoaded", function() {
   renderCharacters(characters);
 });
