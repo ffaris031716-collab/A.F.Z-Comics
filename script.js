@@ -63,7 +63,7 @@ const characters = [
     name: "Ghazi",
     role: "Member of Legion",
     description: " He was incredibly strong, could teleport, and fire lasers from his eyes. He could also absorb energy from the sun. But his power had a price—the more he absorbed, the more it burned him from within. He was willing to pay that price..",
-    image: "assets/ghazi.jpg"
+    image: "assets/hero2.jpg"
   },
   {
     name: "Malik Al-Shadow",
