@@ -60,16 +60,28 @@ const characters = [
     image: "assets/hero1.jpg"
   },
   {
-    name: "Amina Noor",
-    role: "The Light Weaver",
-    description: "A mystic warrior who wields the power of light.",
-    image: "assets/amina.jpg"
+    name: "Ghazi",
+    role: "Member of Legion",
+    description: " He was incredibly strong, could teleport, and fire lasers from his eyes. He could also absorb energy from the sun. But his power had a price—the more he absorbed, the more it burned him from within. He was willing to pay that price..",
+    image: "assets/ghazi.jpg"
   },
   {
     name: "Malik Al-Shadow",
     role: "The Dark Prophet",
     description: "A fallen hero who now seeks to destroy the Legion.",
     image: "assets/malik.jpg"
+  },
+  {
+    name: "Malik Al-Shadow",
+    role: "The Dark Prophet",
+    description: "A fallen hero who now seeks to destroy the Legion.",
+    image: "assets/malik.jpg
+   },
+   {
+    name: "Malik Al-Shadow",
+    role: "The Dark Prophet",
+    description: "A fallen hero who now seeks to destroy the Legion.",
+    image: "assets/malik.jpg
   }
 ];
 
