@@ -1,28 +1,27 @@
-alert("script.js is loading!");
+// ====== COMICS DATA ======
 const comics = [
   {
     title: "The Legion of Muslims",
     description: "The first chapter of our epic saga.",
     cover: "assets/the-legion-of-muslims.jpg",
-    pdf: "assets/your-comic.pdf"   //
-  }
-];
+    pdf: ""
   }
 ];
 
+// ====== RENDER COMICS ======
 const grid = document.getElementById("comicGrid");
 const search = document.getElementById("search");
 
-function render(list){
+function render(list) {
   grid.innerHTML = "";
-  if(!list.length){
+  if (!list.length) {
     grid.innerHTML = '<p style="color:#888">No comics found.</p>';
     return;
   }
-  list.forEach(c=>{
-    const card=document.createElement("article");
-    card.className="comic-card";
-    card.innerHTML=`
+  list.forEach(c => {
+    const card = document.createElement("article");
+    card.className = "comic-card";
+    card.innerHTML = `
       <div class="cover">
         ${c.cover ? `<img src="${c.cover}" alt="${c.title} cover">` : `<div class="placeholder">AFZ<br>COMICS</div>`}
       </div>
@@ -32,52 +31,56 @@ function render(list){
         <div class="comic-actions">
           ${c.pdf ? `<a class="read" href="${c.pdf}" target="_blank">READ PDF</a><a href="${c.pdf}" download>DOWNLOAD</a>` : `<a class="read" href="#about">ADD PDF</a>`}
         </div>
-      </div>`;
+      </div>
+    `;
     grid.appendChild(card);
   });
 }
-search.addEventListener("input",()=>{
-  const q=search.value.toLowerCase();
-  render(comics.filter(c=>(c.title+" "+c.description).toLowerCase().includes(q)));
+
+search.addEventListener("input", () => {
+  const q = search.value.toLowerCase();
+  render(comics.filter(c => (c.title + " " + c.description).toLowerCase().includes(q)));
 });
+
 render(comics);
+
 // ====== CHARACTERS DATA ======
 const characters = [
   {
-    name: "Sherdil",
-    role: "Leader of Legion",
-    description: " The first member was Sherdil from Pakistan. Blessed with superhuman strength and armed with an indestructible metal sword and shield, he was the leader of this team. Years ago, he lost his family to a demon attack. He swore never to let it happen again.",
-    image: "assets/hero1.jpg"  // Add your image filename here
+    name: "Zayd Al-Haqq",
+    role: "The Commander",
+    description: "A fearless leader with the power to command the elements.",
+    image: "assets/zayd.jpg"
   },
   {
-    name: "Villain Name",
-    role: "The Shadow Lord",
-    description: "A dark force seeking to plunge the world into eternal darkness.",
-    image: "assets/villain1.jpg"
+    name: "Amina Noor",
+    role: "The Light Weaver",
+    description: "A mystic warrior who wields the power of light.",
+    image: "assets/amina.jpg"
   },
   {
-    name: "Ally Name",
-    role: "The Wise Mentor",
-    description: "An ancient warrior who guides the Legion with wisdom and experience.",
-    image: "assets/ally1.jpg"
+    name: "Malik Al-Shadow",
+    role: "The Dark Prophet",
+    description: "A fallen hero who now seeks to destroy the Legion.",
+    image: "assets/malik.jpg"
   }
-  // Add more characters as needed
 ];
 
 // ====== RENDER CHARACTERS ======
 function renderCharacters(list) {
   const grid = document.getElementById("characterGrid");
-  if (!grid) 
+  if (!grid) {
     console.error("characterGrid not found!");
     return;
-  
+  }
+
   grid.innerHTML = "";
-  
+
   if (!list.length) {
     grid.innerHTML = '<p style="color:#888; grid-column: 1/-1; text-align: center;">No characters added yet.</p>';
     return;
   }
-  
+
   list.forEach(char => {
     const card = document.createElement("div");
     card.className = "character-card";
@@ -95,8 +98,7 @@ function renderCharacters(list) {
   });
 }
 
-// Render characters when page loads
+// ====== RUN WHEN PAGE LOADS ======
 document.addEventListener("DOMContentLoaded", function() {
   renderCharacters(characters);
-   console.log("Characters rendered!");
 });
