@@ -57,10 +57,10 @@ const characters = [
     image: "assets/hero2.jpg"
   },
   {
-    name: "Ibrahim Al-Khalil",
-    role: "The Flame of Justice",
-    description: "A righteous judge who wields the power of divine fire. He burns away corruption and stands as a beacon of justice.",
-    image: "assets/ibrahim.jpg"
+    name: "Shaheen",
+    role: "Member of Legion",
+    description: "Shaheen from Qatar, equipped with enhanced senses and reflexes. He saw the world in data—weak points, trajectories, probabilities. He never spoke much, but he never missed a detail.",
+    image: "assets/hero3.jpg"
   }
 ];
 
