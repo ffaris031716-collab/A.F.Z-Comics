@@ -54,15 +54,15 @@ render(comics);
 // ====== CHARACTERS DATA ======
 const characters = [
   {
-    name: "Sherdil",
-    role: "Leader of Legion",
-    description: " Sherdil from Pakistan. Blessed with superhuman strength and armed with an indestructible metal sword and shield, he was the leader of this team. Years ago, he lost his family to a demon attack. He swore never to let it happen again..",
+    name: "Zayd Al-Haqq",
+    role: "The Commander",
+    description: "A fearless leader with the power to command the elements.",
     image: "assets/hero1.jpg"
   },
   {
-    name: "Ghazi",
-    role: "Member of Legion",
-    description: " He was incredibly strong, could teleport, and fire lasers from his eyes. He could also absorb energy from the sun. But his power had a price—the more he absorbed, the more it burned him from within. He was willing to pay that price..",
+    name: "Amina Noor",
+    role: "The Light Weaver",
+    description: "A mystic warrior who wields the power of light.",
     image: "assets/hero2.jpg"
   },
   {
@@ -70,18 +70,6 @@ const characters = [
     role: "The Dark Prophet",
     description: "A fallen hero who now seeks to destroy the Legion.",
     image: "assets/malik.jpg"
-  },
-  {
-    name: "Malik Al-Shadow",
-    role: "The Dark Prophet",
-    description: "A fallen hero who now seeks to destroy the Legion.",
-    image: "assets/malik.jpg
-   },
-   {
-    name: "Malik Al-Shadow",
-    role: "The Dark Prophet",
-    description: "A fallen hero who now seeks to destroy the Legion.",
-    image: "assets/malik.jpg
   }
 ];
 
@@ -120,4 +108,4 @@ function renderCharacters(list) {
 // ====== RUN WHEN PAGE LOADS ======
 document.addEventListener("DOMContentLoaded", function() {
   renderCharacters(characters);
-});;
+});
