@@ -1,9 +1,11 @@
 const comics = [
   {
-    title: "Your First Comic",
-    description: "Add your comic cover and PDF here.",
-    cover: "",
-    pdf: ""
+    title: "The Legion of Muslims",
+    description: "The first chapter of our epic saga.",
+    cover: "assets/the-legion-of-muslims.jpg",
+    pdf: "assets/your-comic.pdf"   //
+  }
+];
   }
 ];
 
