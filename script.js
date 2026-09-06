@@ -66,7 +66,9 @@ const characters = [
 // ====== RENDER CHARACTERS ======
 function renderCharacters(list) {
   const grid = document.getElementById("characterGrid");
-  if (!grid) return;
+  if (!grid) 
+    console.error("characterGrid not found!");
+    return;
   
   grid.innerHTML = "";
   
