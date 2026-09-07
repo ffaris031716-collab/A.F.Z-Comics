@@ -1,10 +1,10 @@
-// ====== COMICS DATA ======
 const comics = [
   {
     title: "The Legion of Muslims",
     description: "The first chapter of our epic saga.",
     cover: "assets/the-legion-of-muslims.jpg",
-    pdf: ""
+    pdf: "assets/your-comic.pdf",
+    urdu: "assets/your-comic-urdu.pdf"
   }
 ];
 
