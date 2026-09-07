@@ -31,9 +31,11 @@ function render(list) {
       <div class="comic-info">
         <h3>${c.title}</h3>
         <p>${c.description}</p>
-        <div class="comic-actions">
-          ${c.pdf ? `<a class="read" href="${c.pdf}" target="_blank">READ PDF</a><a href="${c.pdf}" download>DOWNLOAD</a>` : `<a class="read" href="#about">ADD PDF</a>`}
-        </div>
+<div class="comic-actions">
+  ${c.pdf ? `<a class="read" href="${c.pdf}" target="_blank">🇬🇧 READ PDF</a>` : ''}
+  ${c.urdu ? `<a class="read" href="${c.urdu}" target="_blank" style="background:#d5a84a;color:#000;">🇵🇰 اردو</a>` : ''}
+  ${c.pdf ? `<a href="${c.pdf}" download>DOWNLOAD</a>` : ''}
+</div>
       </div>
     `;
     grid.appendChild(card);
