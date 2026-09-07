@@ -32,8 +32,8 @@ function render(list) {
         <h3>${c.title}</h3>
         <p>${c.description}</p>
 <div class="comic-actions">
-  ${c.pdf ? `<a class="read" href="${c.pdf}" target="_blank">🇬🇧 READ PDF</a>` : ''}
-  ${c.urdu ? `<a class="read" href="${c.urdu}" target="_blank" style="background:#d5a84a;color:#000;">🇵🇰 اردو</a>` : ''}
+  ${c.pdf ? `<a class="read" href="${c.pdf}" target="_blank"> READ PDF</a>` : ''}
+  ${c.urdu ? `<a class="read" href="${c.urdu}" target="_blank" style="background:#d5a84a;color:#000;"> اردو</a>` : ''}
   ${c.pdf ? `<a href="${c.pdf}" download>DOWNLOAD</a>` : ''}
 </div>
       </div>
